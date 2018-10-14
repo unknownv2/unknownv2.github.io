@@ -1,0 +1,6 @@
+title: Dev Blog
+author: unknown
+email: 
+description: > # this means to ignore newlines until "baseurl:"
+  Development blog.
+theme: minima
