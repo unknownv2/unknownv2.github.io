@@ -18,10 +18,10 @@ In `Java`, the default PriorityQueue orders the values according to their `natur
 You can create a simple max-heap with a priority queue using:
 
 ```Java
-PriorityQueue<Integer> queue = new PriorityQueue<>((a,b) -> b - a);
+PriorityQueue<Integer> queue = new PriorityQueue<>(Collections.reverseOrder());
 ```
 The equivalent implementation using one of the classes from the above repository collection in `C#` would be:
 
 ```C#
-var queue = new Psi.SimplePriorityQueue<int>((a, b) => b - a);
+var queue = new Psi.SimplePriorityQueue<int>((a,b) => b.CompareTo(a));
 ```
