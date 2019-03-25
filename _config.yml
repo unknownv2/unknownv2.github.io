@@ -4,4 +4,8 @@ email: thierry44@gmail.com
 github_username: unknownv2
 description: > # this means to ignore newlines until "baseurl:"
   Development blog.
+
+# Build settings
 theme: minima
+plugins:
+  - jekyll-feed
