@@ -5,7 +5,7 @@ date:   2019-03-11 23:00:00 -0700
 categories: programming
 ---
 
-C# doesn't have a default `PriorityQueue` implementation as part of the .NET Base Class Libary (BCL), so I started a collection of
+`C#` doesn't have a default `PriorityQueue` implementation as part of the .NET Base Class Libary (BCL), so I started a collection of
 some data structure implementations, which include several Priority Queue classes [in this repository](https://github.com/unknownv2/data-structures).
 
 The official tracking issue for adding a `PriorityQueue` implementation to .NET Core can be found [here](https://github.com/dotnet/corefx/issues/574).
@@ -23,5 +23,5 @@ PriorityQueue<Integer> queue = new PriorityQueue<>(Collections.reverseOrder());
 The equivalent implementation using one of the classes from the above repository collection in `C#` would be:
 
 ```C#
-var queue = new Psi.SimplePriorityQueue<int>((a,b) => b.CompareTo(a));
+var queue = new Trill.PriorityQueue<int>(Comparer<int>.Create((a, b) => b.CompareTo(a));
 ```
